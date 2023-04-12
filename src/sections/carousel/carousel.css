@@ -1,0 +1,23 @@
+
+.carimg{
+  height: 670px ;
+  background-color: black;
+}
+
+.carimg img{
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-caption{
+  bottom: 15rem;
+  left: 25rem;
+  text-align:left;
+}
+.carousel-caption h3,
+.carousel-caption h1{
+  color: white;
+  padding: 5px;
+  font-weight: bold ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

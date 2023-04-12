@@ -1,0 +1,147 @@
+.attendance-top{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.attendance-left, .attendance-right{
+    display: flex;
+    align-items: center;
+    gap: 15px 35px;
+    flex-wrap: wrap;
+}
+
+.attendance-input .filter-label{
+    font-size: 15px;
+    display: block;
+    color: #202020;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.attendance-input .filter-input{
+    height: 38px;
+    width: 200px;
+    border: 1px solid var(--blue-color);
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+}
+
+.attendance-card{
+    border: 1px solid var(--light-color);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 160px;
+}
+
+.attendance-card .attendance-card-tit{
+    padding: 5px 10px;
+    width: 100%;
+    background-color: var(--sec-color);
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+}
+
+.attendance-card .attendance-card-tit.absent{
+    background-color: var(--blue-color);
+}
+
+.attendance-card-con{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+}
+
+.attendance-card-con .attendance-total{
+    font-size: 17px;
+    color: var(--blue-color);
+}
+
+.attendance-card-con .attendance-num{
+    font-size: 17px;
+    color: var(--light-color);
+}
+
+
+@media screen and (max-width:500px) {
+    .attendance-left, .attendance-right{
+        gap: 15px;
+    }
+    .attendance-card{
+        width: 140px;
+    }
+}
+
+
+
+
+
+.attendance-con{
+    overflow: auto;
+}
+
+.attendance-con::-webkit-scrollbar {
+    height: 4px;
+}
+.attendance-con::-webkit-scrollbar-track {
+    background: transparent;
+}
+.attendance-con::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: var(--blue-color);
+}
+
+
+.attendance-table{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.attendance-table thead{
+    background-color: var(--sec-color);
+}
+
+.attendance-table thead th{
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.attendance-table tbody td{
+    padding: 15px 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid var(--light-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--sec-color);
+}
+
+.attendance-table tbody td.signed{
+    color: var(--blue-color);
+}
+
+.attendance-table tbody td.td-img{
+    text-align: start;
+}
+
+.attendance-table tbody td.half{
+    font-weight: 700;
+}
+
+.attendance-table tbody td .child-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}

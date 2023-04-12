@@ -1,0 +1,242 @@
+body{
+  overflow-x: hidden;
+  background-color: #fff;
+}
+.home .landing {
+  position: relative;
+  padding-top:16px ;
+  
+}
+.home .landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #33415C;
+  z-index: -1;
+}
+.home .landing .container {
+  display: flex;
+  height: 660px;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.home .landing .text {
+  flex: 1;
+  padding-top: 55px;
+}
+@media (max-width: 991px) {
+  .home .landing .text {
+    text-align: center;
+  }
+}
+.home .landing .text h3 {
+  font-weight: bold ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #F9F9F9; 
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .home .landing .text h3 {
+    font-size: 28px;
+  }
+}
+.home .landing .text h1 {
+  font-size: 50px;
+  font-weight: bold ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 10px 0 40px;
+  color: #F9F9F9;  
+}
+@media (max-width: 991px) {
+  .home .landing .text h1 {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 767px) {
+  .home .landing .text h1 {
+    font-size: 18px;
+  }
+}
+.home .landing .image{
+  width:600px;
+  height: 500px;
+}
+.home .landing .image img {
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+}
+
+
+@media (max-width: 991px) {
+  .home .landing .image {
+    display: none;
+  }
+}  
+
+.home div.line{
+  width: 65%;
+  height: 14px;
+  background-color: #564FFF;
+  color: wheat;
+  margin: auto;
+}
+
+.home section.box img{
+  width: 37% ;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0 35px;
+  
+
+}
+.home section.event {
+  background-image: url('../../asset/image/4.jpg');
+  background-color: #242424;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+}
+.home section.event::before{
+    content: '';
+    background-color: #33415C;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home section.event h6.tilte{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28px;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  top: 21px;
+  left: 50%;
+  margin-left: -50%;
+
+}
+.home section.event h1.tilte{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  top: 53px;
+  left: 50%;
+  margin-left: -50%;
+
+}
+
+.home section.event div.btn{
+  position: absolute;
+  z-index: 999;
+  bottom: 20px;
+  width: 100%;
+  left: 50%;
+  margin-left: -50%;
+
+  }
+
+
+.home section.parent h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #33415C;
+  text-align: center;
+  margin-bottom: 75px;
+
+}
+.home section.parent div.msg,
+.home section.parent div.msg2{
+  width: 350px;
+  height: 180px;
+  color: #fff;
+  padding: 20px;
+  margin: 8px;
+  position: relative;
+  border-radius: 15px;
+}
+.home section.parent div.msg{
+  background-color: #564FFF;
+}
+.home section.parent div.msg2{
+  background-color: #33415C;
+}
+
+.home section.parent div.msg::before,
+.home section.parent div.msg2::before {
+  content: "";
+  border-width: 30px;
+  border-style: solid;
+  position: absolute;
+  left: 12%;
+  bottom: -27px;
+}
+.home section.parent div.msg::before{
+  border-color: #564FFF #564FFF transparent transparent;
+}
+.home section.parent div.msg2::before{
+  border-color: #33415C #33415C transparent transparent;
+}
+.home section.parent div.info {
+  width: 265px;
+  height: 265px;
+  display: flex;
+  padding: 9px;
+  margin: 18px 0px 0px 88px;
+}
+.home section.parent div.info img{
+  width: 80px;
+  margin-right: 12px;
+}
+.home section.parent div.info span{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #162e6e;
+  font-size: 17px;
+}
+.home section.parent div.info span.ti{
+  font-size: 25px;
+  font-weight: bold;
+  color: #564FFF;
+}
+
+
+.home section.gallary {
+  padding: 30px;
+  background-color: #33415C;
+}
+
+
+
+.home section.gallary h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #fff ;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 710px) {
+  .home section.parent div.msg,
+.home section.parent div.msg2{
+  width: 100%;
+}
+
+  
+}
+
+
+
